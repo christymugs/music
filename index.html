@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <title>Music Player Platform | AsmrProg</title>
+    <title>Music Player Platform | SoundSphere</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
                     <i class='bx bx-log-out-circle'></i>
                 </button>
                 <i class='bx bx-pulse'></i>
-                <a href="#">AsmrProg</a>
+                <a href="#">SoundSphere</a>
             </div>
 
             <div class="menu">
@@ -42,7 +42,7 @@
                     </li>
                     <li>
                         <i class='bx bxs-radio'></i>
-                        <a href="#">Poddcasts</a>
+                        <a href="#">Podcasts</a>
                     </li>
                 </ul>
             </div>
@@ -60,7 +60,7 @@
                     </li>
                     <li>
                         <i class='bx bxs-heart'></i>
-                        <a href="#">Favourites</a>
+                        <a href="#">Favorites</a>
                     </li>
                     <li>
                         <i class='bx bxs-folder'></i>
@@ -79,15 +79,15 @@
                     </li>
                     <li>
                         <i class='bx bxs-caret-right-circle'></i>
-                        <a href="#">Best of 2023</a>
+                        <a href="#">Best of Country</a>
                     </li>
                     <li>
                         <i class='bx bxs-caret-right-circle'></i>
-                        <a href="#">Best of 2022</a>
+                        <a href="#">Best of Rap</a>
                     </li>
                     <li>
                         <i class='bx bxs-caret-right-circle'></i>
-                        <a href="#">Kael Fischer</a>
+                        <a href="#">Best of Pop</a>
                     </li>
 
                 </ul>
@@ -100,7 +100,7 @@
                 </div>
                 <div class="bottom">
                     <i class='bx bx-podcast'></i>
-                    <p>Playing On Device</p>
+                    <p>Playing Now</p>
                 </div>
             </div>
 
@@ -129,9 +129,9 @@
                 <div class="left">
                     <h5>Trending New Song</h5>
                     <div class="info">
-                        <h2>Lost Emotions</h2>
-                        <h4>Rion Clarke</h4>
-                        <h5>63 Million Plays</h5>
+                        <h2>Beautiful Things</h2>
+                        <h4>Benson Boone</h4>
+                        <h5>1 Billion Plays</h5>
                         <div class="buttons">
                             <button>Listen Now</button>
                             <i class='bx bxs-heart'></i>
@@ -147,25 +147,41 @@
                         <h5>Genres</h5>
                         <a href="#">See all</a>
                     </div>
-
                     <div class="items">
                         <div class="item">
-                            <p>Electro<br>Pop</p>
+                            <p>Pop</p>
+                            <i class='bx bxs-right-arrow genre-play-btn' data-genre="genre-song-1"></i>
+                            <audio id="genre-song-1" src="assets/electro-pop.mp3"></audio>
                         </div>
+                        <!-- Dance Beat -->
                         <div class="item">
-                            <p>Dance<br>Beeat</p>
+                            <p>Country</p>
+                            <i class='bx bxs-right-arrow genre-play-btn' data-genre="genre-song-2"></i>
+                            <audio id="genre-song-2" src="assets/dance-beat.mp3"></audio>
                         </div>
+                        <!-- Clubhouse Remix -->
                         <div class="item">
-                            <p>Clubhouse<br>Remix</p>
+                            <p>RnB</p>
+                            <i class='bx bxs-right-arrow genre-play-btn' data-genre="genre-song-3"></i>
+                            <audio id="genre-song-3" src="assets/clubhouse-remix.mp3"></audio>
                         </div>
+                        <!-- Hip Hop Rap -->
                         <div class="item">
-                            <p>Hip Hop<br>Rap</p>
+                            <p>Hip Hop/Rap</p>
+                            <i class='bx bxs-right-arrow genre-play-btn' data-genre="genre-song-4"></i>
+                            <audio id="genre-song-4" src="assets/hip-hop-rap.mp3"></audio>
                         </div>
+                        <!-- Alternative Indie -->
                         <div class="item">
-                            <p>Alternative<br>Indie</p>
+                            <p>80's</p>
+                            <i class='bx bxs-right-arrow genre-play-btn' data-genre="genre-song-5"></i>
+                            <audio id="genre-song-5" src="assets/alternative-indie.mp3"></audio>
                         </div>
+                        <!-- Classical Period -->
                         <div class="item">
-                            <p>Classical<br>Period</p>
+                            <p>Classical</p>
+                            <i class='bx bxs-right-arrow genre-play-btn' data-genre="genre-song-6"></i>
+                            <audio id="genre-song-6" src="assets/classical-period.mp3"></audio>
                         </div>
                     </div>
 
@@ -178,76 +194,79 @@
                     </div>
 
                     <div class="items">
-                        <div class="item">
+                        <div class="item" data-title="Summer's Hot" data-artist="Katori Walker" data-duration="02:05">
                             <div class="info">
                                 <p>01</p>
                                 <img src="assets/song-1.png">
                                 <div class="details">
-                                    <h5>Sunrise</h5>
-                                    <p>Lila Rivera</p>
+                                    <h5>Summer's Hot</h5>
+                                    <p>Katori Walker</p>
                                 </div>
                             </div>
                             <div class="actions">
-                                <p>03:45</p>
+                                <p>02:05</p>
                                 <div class="icon">
-                                    <i class='bx bxs-right-arrow'></i>
+                                    <i class='bx bxs-right-arrow play-btn' data-song="song-1"></i>
                                 </div>
                                 <i class='bx bxs-plus-square'></i>
                             </div>
+                            <audio id="song-1" src="assets/walker.mp3"></audio>
                         </div>
-                        <div class="item">
+                        <div class="item" data-title="Feel Like Family" data-artist="Vicki Vox" data-duration="03:05">
                             <div class="info">
                                 <p>02</p>
                                 <img src="assets/song-2.png">
                                 <div class="details">
-                                    <h5>Voyage</h5>
-                                    <p>Tyde Brennnan</p>
+                                    <h5>Feel Like Family</h5>
+                                    <p>Vicki Vox</p>
                                 </div>
                             </div>
                             <div class="actions">
-                                <p>04:35</p>
+                                <p>03:05</p>
                                 <div class="icon">
-                                    <i class='bx bxs-right-arrow'></i>
+                                    <i class='bx bxs-right-arrow play-btn' data-song="song-2"></i>
                                 </div>
                                 <i class='bx bxs-plus-square'></i>
                             </div>
+                            <audio id="song-2" src="assets/family.mp3"></audio>
                         </div>
-                        <div class="item">
+                        <div class="item" data-title="Lost Family" data-artist="Afrobeats" data-duration="04:22">
                             <div class="info">
                                 <p>03</p>
                                 <img src="assets/song-3.png">
                                 <div class="details">
-                                    <h5>Breeze</h5>
-                                    <p>Sola Kim</p>
+                                    <h5>Lost Family</h5>
+                                    <p>Afrobeats</p>
                                 </div>
                             </div>
                             <div class="actions">
                                 <p>04:22</p>
                                 <div class="icon">
-                                    <i class='bx bxs-right-arrow'></i>
+                                    <i class='bx bxs-right-arrow play-btn' data-song="song-3"></i>
                                 </div>
                                 <i class='bx bxs-plus-square'></i>
                             </div>
+                            <audio id="song-3" src="assets/afro.mp3"></audio>
                         </div>
-                        <div class="item">
+                        <div class="item" data-title="Free Mind" data-artist="Wildflowers" data-duration="03:17">
                             <div class="info">
                                 <p>04</p>
                                 <img src="assets/song-4.png">
                                 <div class="details">
-                                    <h5>Twilight</h5>
-                                    <p>Jett Lawsonn</p>
+                                    <h5>Free Mind</h5>
+                                    <p>Wildflowers</p>
                                 </div>
                             </div>
                             <div class="actions">
                                 <p>03:17</p>
                                 <div class="icon">
-                                    <i class='bx bxs-right-arrow'></i>
+                                    <i class='bx bxs-right-arrow play-btn' data-song="song-4"></i>
                                 </div>
                                 <i class='bx bxs-plus-square'></i>
                             </div>
+                            <audio id="song-4" src="assets/wildflower.mp3"></audio>
                         </div>
                     </div>
-
                 </div>
 
             </div>
@@ -296,22 +315,27 @@
                     <div class="buttons">
                         <i class='bx bx-repeat'></i>
                         <i class='bx bx-first-page'></i>
-                        <i class='bx bxs-right-arrow play-button'></i>
+                        <i class='bx bxs-right-arrow play-button' id="play-pause-btn"></i>
+                        <!-- Add this within the .player-actions div, below the buttons -->
+                        <audio id="default-song" src="assets/song.mp3"></audio>
+
                         <i class='bx bx-last-page'></i>
                         <i class='bx bx-transfer-alt'></i>
                     </div>
                     <div class="lyrics">
-                        <i class='bx bx-chevron-up'></i>
-                        <h5>LYRICS</h5>
+                        <button id="lyrics-btn">
+                            <i class='bx bx-chevron-up'></i>
+                            <h5>LYRICS</h5>
+                        </button>
                     </div>
                 </div>
-
+                <div id="lyrics-content" class="lyrics-content">
+                    <!-- Lyrics content goes here -->
+                    <p>Lyrics will be displayed here...</p>
+                </div>
             </div>
-
         </div>
-
     </div>
-
 
     <script src="script.js"></script>
 </body>
